@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "A7kJPV/bjsR38jWWsiRJbf7U4jAIcvvph+wsaqyLSLzWEqgPOFztEN+1nQUls1rLlMS/s65TgHsSBLcyM/41XQ==",
+  "dgSpecHash": "JL6ExdD6nT7ZwQj+3yKSyuOXFiaVYa8coxiRxxrsujVvYeh9HlY5Ffljt2J6Zr7S4ymfrrOg/VOTti/tsQCgGw==",
   "success": true,
   "projectFilePath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj",
   "expectedPackageFiles": [
     "/Users/sac/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
-    "/Users/sac/.nuget/packages/nunit/4.1.0/nunit.4.1.0.nupkg.sha512"
+    "/Users/sac/.nuget/packages/nunit/4.1.0/nunit.4.1.0.nupkg.sha512",
+    "/Users/sac/.nuget/packages/nunit.analyzers/4.2.0/nunit.analyzers.4.2.0.nupkg.sha512",
+    "/Users/sac/.nuget/packages/nunit.consolerunner/3.17.0/nunit.consolerunner.3.17.0.nupkg.sha512",
+    "/Users/sac/.nuget/packages/nunit3testadapter/4.5.0/nunit3testadapter.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

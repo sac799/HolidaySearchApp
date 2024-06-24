@@ -1,28 +1,25 @@
 ﻿<Properties StartupConfiguration="{C512888E-8FA3-4F8E-AFFF-11CE6280383E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HolidaySearchTests/UnitTest1.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HolidaySearchTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HolidaySearchTests/HolidaySearchTests.cs">
     <Files>
-      <File FileName="HolidaySearchTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="HolidaySearchTests/HolidaySearchTests.cs" Line="31" Column="24" />
+      <File FileName="HolidaySearchLibrary/Services/HolidaySearch.cs" />
+      <File FileName="HolidaySearchLibrary/Models/Hotel.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HolidaySearchLibrary" expanded="True">
             <Node name="HolidaySearchTests">
-              <Node name="UnitTest1.cs" selected="True" />
+              <Node name="HolidaySearchTests.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="HolidaySearchLibrary" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.HolidaySearchTests FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

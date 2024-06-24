@@ -339,10 +339,13 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit.Analyzers/3.6.1": {
+      "NUnit.Analyzers/4.2.0": {
         "type": "package"
       },
-      "NUnit3TestAdapter/4.4.2": {
+      "NUnit.ConsoleRunner/3.17.0": {
+        "type": "package"
+      },
+      "NUnit3TestAdapter/4.5.0": {
         "type": "package",
         "build": {
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
@@ -359,6 +362,22 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "HolidaySearchLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NUnit": "4.1.0",
+          "NUnit.ConsoleRunner": "3.17.0",
+          "NUnit3TestAdapter": "4.5.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/HolidaySearchLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HolidaySearchLibrary.dll": {}
         }
       }
     }
@@ -749,10 +768,10 @@
         "nunit.nuspec"
       ]
     },
-    "NUnit.Analyzers/3.6.1": {
-      "sha512": "RKP9tpKfl3DmRgUDGgh3XM3XzeLMrCXXMZm6vm1nMsObZ6vtQL1L9NrK7+oZh1jWearvNsbMis2+AIOY3NFmow==",
+    "NUnit.Analyzers/4.2.0": {
+      "sha512": "4fJojPkzdoa4nB2+p6U+fITvPnVvwWSnsmiJ/Dl30xqiL3oxNbYvfeSLVd91hOmEjoUqSwN3Z7j1aFedjqWbUA==",
       "type": "package",
-      "path": "nunit.analyzers/3.6.1",
+      "path": "nunit.analyzers/4.2.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -761,16 +780,102 @@
         "docs/README.md",
         "images/nunit_256.png",
         "license.txt",
-        "nunit.analyzers.3.6.1.nupkg.sha512",
+        "nunit.analyzers.4.2.0.nupkg.sha512",
         "nunit.analyzers.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "NUnit3TestAdapter/4.4.2": {
-      "sha512": "vA/iHYcR+LYw+pRWQugckC/zW2fXHaqMr2uA82NOBt8v4YK4wMJrQ7QC8XLc7PjetEZ96cPbBTWsDDtmQiRZTA==",
+    "NUnit.ConsoleRunner/3.17.0": {
+      "sha512": "XUctGgtqYdWzNiXFdDa1odKlrBWBStEEfv+TOhrtubpXGmNwKZ4GzzZJiq3eK5qpkj2QmPlP583Ffzf/Zr+w6g==",
       "type": "package",
-      "path": "nunit3testadapter/4.4.2",
+      "path": "nunit.consolerunner/3.17.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "images/nunit_256.png",
+        "nunit.consolerunner.3.17.0.nupkg.sha512",
+        "nunit.consolerunner.nuspec",
+        "tools/agents/net20/nunit-agent-x86.exe",
+        "tools/agents/net20/nunit-agent-x86.exe.config",
+        "tools/agents/net20/nunit-agent.exe",
+        "tools/agents/net20/nunit-agent.exe.config",
+        "tools/agents/net20/nunit.agent.addins",
+        "tools/agents/net20/nunit.engine.api.dll",
+        "tools/agents/net20/nunit.engine.api.xml",
+        "tools/agents/net20/nunit.engine.core.dll",
+        "tools/agents/net20/testcentric.engine.metadata.dll",
+        "tools/agents/net40/nunit-agent-x86.exe",
+        "tools/agents/net40/nunit-agent-x86.exe.config",
+        "tools/agents/net40/nunit-agent.exe",
+        "tools/agents/net40/nunit-agent.exe.config",
+        "tools/agents/net40/nunit.agent.addins",
+        "tools/agents/net40/nunit.engine.api.dll",
+        "tools/agents/net40/nunit.engine.api.xml",
+        "tools/agents/net40/nunit.engine.core.dll",
+        "tools/agents/net40/testcentric.engine.metadata.dll",
+        "tools/agents/net5.0/nunit-agent.deps.json",
+        "tools/agents/net5.0/nunit-agent.dll",
+        "tools/agents/net5.0/nunit-agent.dll.config",
+        "tools/agents/net5.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net5.0/nunit.agent.addins",
+        "tools/agents/net5.0/nunit.engine.api.dll",
+        "tools/agents/net5.0/nunit.engine.api.xml",
+        "tools/agents/net5.0/nunit.engine.core.dll",
+        "tools/agents/net5.0/testcentric.engine.metadata.dll",
+        "tools/agents/net6.0/nunit-agent.deps.json",
+        "tools/agents/net6.0/nunit-agent.dll",
+        "tools/agents/net6.0/nunit-agent.dll.config",
+        "tools/agents/net6.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net6.0/nunit.agent.addins",
+        "tools/agents/net6.0/nunit.engine.api.dll",
+        "tools/agents/net6.0/nunit.engine.api.xml",
+        "tools/agents/net6.0/nunit.engine.core.dll",
+        "tools/agents/net6.0/testcentric.engine.metadata.dll",
+        "tools/agents/net7.0/nunit-agent.deps.json",
+        "tools/agents/net7.0/nunit-agent.dll",
+        "tools/agents/net7.0/nunit-agent.dll.config",
+        "tools/agents/net7.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net7.0/nunit.agent.addins",
+        "tools/agents/net7.0/nunit.engine.api.dll",
+        "tools/agents/net7.0/nunit.engine.api.xml",
+        "tools/agents/net7.0/nunit.engine.core.dll",
+        "tools/agents/net7.0/testcentric.engine.metadata.dll",
+        "tools/agents/net8.0/nunit-agent.deps.json",
+        "tools/agents/net8.0/nunit-agent.dll",
+        "tools/agents/net8.0/nunit-agent.dll.config",
+        "tools/agents/net8.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net8.0/nunit.agent.addins",
+        "tools/agents/net8.0/nunit.engine.api.dll",
+        "tools/agents/net8.0/nunit.engine.api.xml",
+        "tools/agents/net8.0/nunit.engine.core.dll",
+        "tools/agents/net8.0/testcentric.engine.metadata.dll",
+        "tools/agents/netcoreapp3.1/nunit-agent.deps.json",
+        "tools/agents/netcoreapp3.1/nunit-agent.dll",
+        "tools/agents/netcoreapp3.1/nunit-agent.dll.config",
+        "tools/agents/netcoreapp3.1/nunit-agent.runtimeconfig.json",
+        "tools/agents/netcoreapp3.1/nunit.agent.addins",
+        "tools/agents/netcoreapp3.1/nunit.engine.api.dll",
+        "tools/agents/netcoreapp3.1/nunit.engine.api.xml",
+        "tools/agents/netcoreapp3.1/nunit.engine.core.dll",
+        "tools/agents/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "tools/nunit.console.nuget.addins",
+        "tools/nunit.engine.api.dll",
+        "tools/nunit.engine.api.xml",
+        "tools/nunit.engine.core.dll",
+        "tools/nunit.engine.dll",
+        "tools/nunit3-console.exe",
+        "tools/nunit3-console.exe.config",
+        "tools/testcentric.engine.metadata.dll"
+      ]
+    },
+    "NUnit3TestAdapter/4.5.0": {
+      "sha512": "s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
+      "type": "package",
+      "path": "nunit3testadapter/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -789,7 +894,7 @@
         "build/netcoreapp3.1/nunit.engine.dll",
         "build/netcoreapp3.1/testcentric.engine.metadata.dll",
         "docs/README.md",
-        "nunit3testadapter.4.4.2.nupkg.sha512",
+        "nunit3testadapter.4.5.0.nupkg.sha512",
         "nunit3testadapter.nuspec",
         "nunit_256.png"
       ]
@@ -814,14 +919,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "HolidaySearchLibrary/1.0.0": {
+      "type": "project",
+      "path": "../HolidaySearchLibrary/HolidaySearchLibrary.csproj",
+      "msbuildProject": "../HolidaySearchLibrary/HolidaySearchLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "HolidaySearchLibrary >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 4.1.0",
-      "NUnit.Analyzers >= 3.6.1",
-      "NUnit3TestAdapter >= 4.4.2",
+      "NUnit.Analyzers >= 4.2.0",
+      "NUnit.ConsoleRunner >= 3.17.0",
+      "NUnit3TestAdapter >= 4.5.0",
       "Newtonsoft.Json >= 13.0.3",
       "coverlet.collector >= 3.2.0"
     ]
@@ -854,7 +966,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj": {
+              "projectPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -876,12 +992,18 @@
             "version": "[4.1.0, )"
           },
           "NUnit.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.6.1, )"
+            "version": "[4.2.0, )"
+          },
+          "NUnit.ConsoleRunner": {
+            "target": "Package",
+            "version": "[3.17.0, )"
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[4.4.2, )"
+            "version": "[4.5.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

@@ -14,6 +14,11 @@
     <SourceRoot Include="/usr/local/share/dotnet/sdk/NuGetFallbackFolder/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nunit3testadapter/4.5.0/build/netcoreapp3.1/NUnit3TestAdapter.props" Condition="Exists('$(NuGetPackageRoot)nunit3testadapter/4.5.0/build/netcoreapp3.1/NUnit3TestAdapter.props')" />
     <Import Project="$(NuGetPackageRoot)nunit/4.1.0/build/NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit/4.1.0/build/NUnit.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">/Users/sac/.nuget/packages/nunit.consolerunner/3.17.0</PkgNUnit_ConsoleRunner>
+    <PkgNUnit_Analyzers Condition=" '$(PkgNUnit_Analyzers)' == '' ">/Users/sac/.nuget/packages/nunit.analyzers/4.2.0</PkgNUnit_Analyzers>
+  </PropertyGroup>
 </Project>

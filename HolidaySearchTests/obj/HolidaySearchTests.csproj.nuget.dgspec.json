@@ -4,14 +4,14 @@
     "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj": {}
   },
   "projects": {
-    "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj": {
+    "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj",
-        "projectName": "HolidaySearchTests",
-        "projectPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj",
+        "projectUniqueName": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj",
+        "projectName": "HolidaySearchLibrary",
+        "projectPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj",
         "packagesPath": "/Users/sac/.nuget/packages/",
-        "outputPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/obj/",
+        "outputPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -41,6 +41,90 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "NUnit.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj",
+        "projectName": "HolidaySearchTests",
+        "projectPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj",
+        "packagesPath": "/Users/sac/.nuget/packages/",
+        "outputPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/sac/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj": {
+                "projectPath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchLibrary/HolidaySearchLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.5.0, )"
@@ -50,12 +134,18 @@
               "version": "[4.1.0, )"
             },
             "NUnit.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.6.1, )"
+              "version": "[4.2.0, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.17.0, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.4.2, )"
+              "version": "[4.5.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
