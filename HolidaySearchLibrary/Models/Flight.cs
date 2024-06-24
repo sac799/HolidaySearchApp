@@ -9,5 +9,6 @@ namespace HolidaySearchLibrary.Models
         public DateTime DepartureDate { get; set; }
         public decimal Price { get; set; }
     }
+
 }
 

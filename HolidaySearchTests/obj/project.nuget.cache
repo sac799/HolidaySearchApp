@@ -1,20 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "yea5Obm7US7c+7Afx1KmbHzV5y+XB/zT4asym650jCvdgNjB8mWYt3xJs0g5817XwqntwByUPy8Dls3BKDCypw==",
+  "dgSpecHash": "8F3nPXxB01su84HSl3JQsqN9swTQDFtHMI4iGrLcT5unHA712A3Z+wYW9Qsa8mbEo2lIWLvXoSHemRGMeSWFSA==",
   "success": true,
   "projectFilePath": "/Users/sac/Documents/GitHub/HolidaySearchApp/HolidaySearchTests/HolidaySearchTests.csproj",
   "expectedPackageFiles": [
     "/Users/sac/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/sac/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
     "/Users/sac/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/sac/.nuget/packages/microsoft.testplatform.objectmodel/17.5.0/microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "/Users/sac/.nuget/packages/microsoft.testplatform.testhost/17.5.0/microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "/Users/sac/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
     "/Users/sac/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/sac/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
-    "/Users/sac/.nuget/packages/nunit/4.1.0/nunit.4.1.0.nupkg.sha512",
-    "/Users/sac/.nuget/packages/nunit.analyzers/4.2.0/nunit.analyzers.4.2.0.nupkg.sha512",
-    "/Users/sac/.nuget/packages/nunit.consolerunner/3.17.0/nunit.consolerunner.3.17.0.nupkg.sha512",
-    "/Users/sac/.nuget/packages/nunit3testadapter/4.5.0/nunit3testadapter.4.5.0.nupkg.sha512",
+    "/Users/sac/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
+    "/Users/sac/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
+    "/Users/sac/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

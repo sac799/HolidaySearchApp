@@ -14,40 +14,6 @@
             "related": ".xml"
           }
         }
-      },
-      "NUnit/4.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/nunit.framework.dll": {
-            "related": ".legacy.xml;.xml"
-          },
-          "lib/net6.0/nunit.framework.legacy.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/nunit.framework.dll": {
-            "related": ".legacy.xml;.xml"
-          },
-          "lib/net6.0/nunit.framework.legacy.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      },
-      "NUnit.Analyzers/4.2.0": {
-        "type": "package"
-      },
-      "NUnit.ConsoleRunner/3.17.0": {
-        "type": "package"
-      },
-      "NUnit3TestAdapter/4.5.0": {
-        "type": "package",
-        "build": {
-          "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
-        }
       }
     }
   },
@@ -81,171 +47,10 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-    },
-    "NUnit/4.1.0": {
-      "sha512": "MT/DpAhjtiytzhTgTqIhBuWx4y26PKfDepYUHUM+5uv4TsryHC2jwFo5e6NhWkApCm/G6kZ80dRjdJFuAxq3rg==",
-      "type": "package",
-      "path": "nunit/4.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGES.md",
-        "LICENSE.txt",
-        "NOTICES.md",
-        "README.md",
-        "THIRD_PARTY_NOTICES.md",
-        "build/NUnit.props",
-        "icon.png",
-        "lib/net462/nunit.framework.dll",
-        "lib/net462/nunit.framework.legacy.dll",
-        "lib/net462/nunit.framework.legacy.xml",
-        "lib/net462/nunit.framework.xml",
-        "lib/net6.0/nunit.framework.dll",
-        "lib/net6.0/nunit.framework.legacy.dll",
-        "lib/net6.0/nunit.framework.legacy.xml",
-        "lib/net6.0/nunit.framework.xml",
-        "nunit.4.1.0.nupkg.sha512",
-        "nunit.nuspec"
-      ]
-    },
-    "NUnit.Analyzers/4.2.0": {
-      "sha512": "4fJojPkzdoa4nB2+p6U+fITvPnVvwWSnsmiJ/Dl30xqiL3oxNbYvfeSLVd91hOmEjoUqSwN3Z7j1aFedjqWbUA==",
-      "type": "package",
-      "path": "nunit.analyzers/4.2.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/nunit.analyzers.dll",
-        "docs/README.md",
-        "images/nunit_256.png",
-        "license.txt",
-        "nunit.analyzers.4.2.0.nupkg.sha512",
-        "nunit.analyzers.nuspec",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
-    "NUnit.ConsoleRunner/3.17.0": {
-      "sha512": "XUctGgtqYdWzNiXFdDa1odKlrBWBStEEfv+TOhrtubpXGmNwKZ4GzzZJiq3eK5qpkj2QmPlP583Ffzf/Zr+w6g==",
-      "type": "package",
-      "path": "nunit.consolerunner/3.17.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "NOTICES.txt",
-        "images/nunit_256.png",
-        "nunit.consolerunner.3.17.0.nupkg.sha512",
-        "nunit.consolerunner.nuspec",
-        "tools/agents/net20/nunit-agent-x86.exe",
-        "tools/agents/net20/nunit-agent-x86.exe.config",
-        "tools/agents/net20/nunit-agent.exe",
-        "tools/agents/net20/nunit-agent.exe.config",
-        "tools/agents/net20/nunit.agent.addins",
-        "tools/agents/net20/nunit.engine.api.dll",
-        "tools/agents/net20/nunit.engine.api.xml",
-        "tools/agents/net20/nunit.engine.core.dll",
-        "tools/agents/net20/testcentric.engine.metadata.dll",
-        "tools/agents/net40/nunit-agent-x86.exe",
-        "tools/agents/net40/nunit-agent-x86.exe.config",
-        "tools/agents/net40/nunit-agent.exe",
-        "tools/agents/net40/nunit-agent.exe.config",
-        "tools/agents/net40/nunit.agent.addins",
-        "tools/agents/net40/nunit.engine.api.dll",
-        "tools/agents/net40/nunit.engine.api.xml",
-        "tools/agents/net40/nunit.engine.core.dll",
-        "tools/agents/net40/testcentric.engine.metadata.dll",
-        "tools/agents/net5.0/nunit-agent.deps.json",
-        "tools/agents/net5.0/nunit-agent.dll",
-        "tools/agents/net5.0/nunit-agent.dll.config",
-        "tools/agents/net5.0/nunit-agent.runtimeconfig.json",
-        "tools/agents/net5.0/nunit.agent.addins",
-        "tools/agents/net5.0/nunit.engine.api.dll",
-        "tools/agents/net5.0/nunit.engine.api.xml",
-        "tools/agents/net5.0/nunit.engine.core.dll",
-        "tools/agents/net5.0/testcentric.engine.metadata.dll",
-        "tools/agents/net6.0/nunit-agent.deps.json",
-        "tools/agents/net6.0/nunit-agent.dll",
-        "tools/agents/net6.0/nunit-agent.dll.config",
-        "tools/agents/net6.0/nunit-agent.runtimeconfig.json",
-        "tools/agents/net6.0/nunit.agent.addins",
-        "tools/agents/net6.0/nunit.engine.api.dll",
-        "tools/agents/net6.0/nunit.engine.api.xml",
-        "tools/agents/net6.0/nunit.engine.core.dll",
-        "tools/agents/net6.0/testcentric.engine.metadata.dll",
-        "tools/agents/net7.0/nunit-agent.deps.json",
-        "tools/agents/net7.0/nunit-agent.dll",
-        "tools/agents/net7.0/nunit-agent.dll.config",
-        "tools/agents/net7.0/nunit-agent.runtimeconfig.json",
-        "tools/agents/net7.0/nunit.agent.addins",
-        "tools/agents/net7.0/nunit.engine.api.dll",
-        "tools/agents/net7.0/nunit.engine.api.xml",
-        "tools/agents/net7.0/nunit.engine.core.dll",
-        "tools/agents/net7.0/testcentric.engine.metadata.dll",
-        "tools/agents/net8.0/nunit-agent.deps.json",
-        "tools/agents/net8.0/nunit-agent.dll",
-        "tools/agents/net8.0/nunit-agent.dll.config",
-        "tools/agents/net8.0/nunit-agent.runtimeconfig.json",
-        "tools/agents/net8.0/nunit.agent.addins",
-        "tools/agents/net8.0/nunit.engine.api.dll",
-        "tools/agents/net8.0/nunit.engine.api.xml",
-        "tools/agents/net8.0/nunit.engine.core.dll",
-        "tools/agents/net8.0/testcentric.engine.metadata.dll",
-        "tools/agents/netcoreapp3.1/nunit-agent.deps.json",
-        "tools/agents/netcoreapp3.1/nunit-agent.dll",
-        "tools/agents/netcoreapp3.1/nunit-agent.dll.config",
-        "tools/agents/netcoreapp3.1/nunit-agent.runtimeconfig.json",
-        "tools/agents/netcoreapp3.1/nunit.agent.addins",
-        "tools/agents/netcoreapp3.1/nunit.engine.api.dll",
-        "tools/agents/netcoreapp3.1/nunit.engine.api.xml",
-        "tools/agents/netcoreapp3.1/nunit.engine.core.dll",
-        "tools/agents/netcoreapp3.1/testcentric.engine.metadata.dll",
-        "tools/nunit.console.nuget.addins",
-        "tools/nunit.engine.api.dll",
-        "tools/nunit.engine.api.xml",
-        "tools/nunit.engine.core.dll",
-        "tools/nunit.engine.dll",
-        "tools/nunit3-console.exe",
-        "tools/nunit3-console.exe.config",
-        "tools/testcentric.engine.metadata.dll"
-      ]
-    },
-    "NUnit3TestAdapter/4.5.0": {
-      "sha512": "s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
-      "type": "package",
-      "path": "nunit3testadapter/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net462/NUnit3.TestAdapter.dll",
-        "build/net462/NUnit3.TestAdapter.pdb",
-        "build/net462/NUnit3TestAdapter.props",
-        "build/net462/nunit.engine.api.dll",
-        "build/net462/nunit.engine.core.dll",
-        "build/net462/nunit.engine.dll",
-        "build/net462/testcentric.engine.metadata.dll",
-        "build/netcoreapp3.1/NUnit3.TestAdapter.dll",
-        "build/netcoreapp3.1/NUnit3.TestAdapter.pdb",
-        "build/netcoreapp3.1/NUnit3TestAdapter.props",
-        "build/netcoreapp3.1/nunit.engine.api.dll",
-        "build/netcoreapp3.1/nunit.engine.core.dll",
-        "build/netcoreapp3.1/nunit.engine.dll",
-        "build/netcoreapp3.1/testcentric.engine.metadata.dll",
-        "docs/README.md",
-        "nunit3testadapter.4.5.0.nupkg.sha512",
-        "nunit3testadapter.nuspec",
-        "nunit_256.png"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "NUnit >= 4.1.0",
-      "NUnit.Analyzers >= 4.2.0",
-      "NUnit.ConsoleRunner >= 3.17.0",
-      "NUnit3TestAdapter >= 4.5.0",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -290,24 +95,6 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "NUnit": {
-            "target": "Package",
-            "version": "[4.1.0, )"
-          },
-          "NUnit.Analyzers": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[4.2.0, )"
-          },
-          "NUnit.ConsoleRunner": {
-            "target": "Package",
-            "version": "[3.17.0, )"
-          },
-          "NUnit3TestAdapter": {
-            "target": "Package",
-            "version": "[4.5.0, )"
-          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"

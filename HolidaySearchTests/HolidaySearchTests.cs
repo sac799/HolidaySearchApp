@@ -1,9 +1,8 @@
 ﻿using HolidaySearchLibrary.Models;
 using HolidaySearchLibrary.Services;
 using Newtonsoft.Json;
-using NUnit.Framework;
 
-namespace HolidaySearchLibrary.HolidaySearchTests
+namespace HolidaySearchApp.HolidaySearchTests
 {
     public class HolidaySearchTests
     {
@@ -28,8 +27,8 @@ namespace HolidaySearchLibrary.HolidaySearchTests
             var holidaySearch = new HolidaySearch(flights, hotels);
             holidaySearch.Search("MAN", "AGP", new DateTime(2023, 7, 1), 7);
             var result = holidaySearch.Results.First();
-            Assert.Equals(2, result.Flight.Id);
-            Assert.Equals(2, result.Hotel.Id);
+            Assert.AreEqual(2, result.Flight.Id);
+            Assert.AreEqual(2, result.Hotel.Id);
         }
 
         [Test]
@@ -41,8 +40,8 @@ namespace HolidaySearchLibrary.HolidaySearchTests
             var holidaySearch = new HolidaySearch(flights, hotels);
             holidaySearch.Search("Any", "PMI", new DateTime(2023, 6, 15), 10);
             var result = holidaySearch.Results.First();
-            Assert.Equals(6, result.Flight.Id);
-            Assert.Equals(5, result.Hotel.Id);
+            Assert.AreEqual(6, result.Flight.Id);
+            Assert.AreEqual(5, result.Hotel.Id);
         }
 
         [Test]
@@ -54,8 +53,8 @@ namespace HolidaySearchLibrary.HolidaySearchTests
             var holidaySearch = new HolidaySearch(flights, hotels);
             holidaySearch.Search("Any", "LPA", new DateTime(2022, 11, 10), 14);
             var result = holidaySearch.Results.First();
-            Assert.Equals(7, result.Flight.Id);
-            Assert.Equals(6, result.Hotel.Id);
+            Assert.AreEqual(7, result.Flight.Id);
+            Assert.AreEqual(6, result.Hotel.Id);
         }
 
         [Test]
@@ -66,7 +65,7 @@ namespace HolidaySearchLibrary.HolidaySearchTests
 
             var holidaySearch = new HolidaySearch(flights, hotels);
             holidaySearch.Search("XYZ", "AGP", new DateTime(2023, 7, 1), 7);
-            Assert.Equals("",holidaySearch.Results);
+            Assert.IsEmpty(holidaySearch.Results);
         }
 
         [Test]
@@ -77,7 +76,7 @@ namespace HolidaySearchLibrary.HolidaySearchTests
 
             var holidaySearch = new HolidaySearch(flights, hotels);
             holidaySearch.Search("MAN", "XYZ", new DateTime(2023, 7, 1), 7);
-            Assert.Equals("",holidaySearch.Results);
+            Assert.IsEmpty(holidaySearch.Results);
         }
 
         [Test]
@@ -88,7 +87,7 @@ namespace HolidaySearchLibrary.HolidaySearchTests
 
             var holidaySearch = new HolidaySearch(flights, hotels);
             holidaySearch.Search("MAN", "AGP", new DateTime(2023, 1, 1), 7);
-            Assert.Equals("",holidaySearch.Results);
+            Assert.IsEmpty(holidaySearch.Results);
         }
 
         [Test]
@@ -99,7 +98,7 @@ namespace HolidaySearchLibrary.HolidaySearchTests
 
             var holidaySearch = new HolidaySearch(flights, hotels);
             holidaySearch.Search("MAN", "AGP", new DateTime(2023, 7, 1), 14);
-            Assert.Equals("",holidaySearch.Results);
+            Assert.IsEmpty(holidaySearch.Results);
         }
     }
 }
